@@ -1,0 +1,24 @@
+name: example
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  video_trimmer_pro:
+    path: ../
+
+  video_player: ^2.9.1
+  file_picker: ^8.1.2
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
