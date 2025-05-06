@@ -38,10 +38,10 @@
       "languageVersion": "3.7"
     },
     {
-      "name": "ffmpeg_kit_flutter",
-      "rootUri": "file:///home/gnac/.pub-cache/hosted/pub.dev/ffmpeg_kit_flutter-6.0.3",
+      "name": "ffmpeg_kit_flutter_new",
+      "rootUri": "file:///home/gnac/.pub-cache/hosted/pub.dev/ffmpeg_kit_flutter_new-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.1"
     },
     {
       "name": "ffmpeg_kit_flutter_platform_interface",
@@ -260,7 +260,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2025-04-23T12:23:59.227651Z",
+  "generated": "2025-05-06T06:56:32.599699Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///home/gnac/development/flutter",
