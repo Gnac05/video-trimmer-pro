@@ -49,14 +49,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
-  ffmpeg_kit_flutter:
+  ffmpeg_kit_flutter_android:
     dependency: transitive
     description:
-      name: ffmpeg_kit_flutter
-      sha256: "843aae41823ca94a0988d975b4b6cdc6948744b9b7e2707d81a3a9cd237b0100"
+      name: ffmpeg_kit_flutter_android
+      sha256: "6fe3ece6a8c16b04f695dab9f58b39fc35e617fce8221d4183dd027e59f71c01"
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.3"
+    version: "1.7.0"
+  ffmpeg_kit_flutter_new:
+    dependency: transitive
+    description:
+      name: ffmpeg_kit_flutter_new
+      sha256: "385c52a2e3308ea3927db4c88f8bf90fb42997f87ceb9081ddc9c6a8cc5f8bf7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   ffmpeg_kit_flutter_platform_interface:
     dependency: transitive
     description:
@@ -99,6 +107,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  get_thumbnail_video:
+    dependency: transitive
+    description:
+      name: get_thumbnail_video
+      sha256: ff61495b42051765d2a9e93bd14dac7ede5853033837bde71c27575a192c53fc
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.3"
   html:
     dependency: transitive
     description:
@@ -288,15 +304,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.5"
-  video_thumbnail:
-    dependency: transitive
-    description:
-      path: "."
-      ref: dev-gnac
-      resolved-ref: "2f8850d44268c3e82837756bc4b48158e1cd3287"
-      url: "https://github.com/Gnac05/video_thumbnail.git"
-    source: git
-    version: "1.0.0"
   video_trimmer_pro:
     dependency: "direct main"
     description:

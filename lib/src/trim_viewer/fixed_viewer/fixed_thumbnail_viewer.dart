@@ -2,8 +2,10 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:transparent_image/transparent_image.dart';
-import 'package:video_thumbnail/video_thumbnail.dart';
+import 'package:get_thumbnail_video/video_thumbnail.dart' as VIDEOTHUMBNAIL;
+import 'package:get_thumbnail_video/src/image_format.dart' as IMAGEFORMAT;
 
 class FixedThumbnailViewer extends StatelessWidget {
   final File videoFile;
@@ -36,12 +38,18 @@ class FixedThumbnailViewer extends StatelessWidget {
     for (int i = 1; i <= numberOfThumbnails; i++) {
       Uint8List? bytes;
       try {
-        bytes = await VideoThumbnail.thumbnailData(
+
+        final VIDEOTHUMBNAIL.XFile fileName = await VIDEOTHUMBNAIL.VideoThumbnail.thumbnailFile(
           video: videoPath,
-          imageFormat: ImageFormat.JPEG,
-          timeMs: (eachPart * i).toInt(),
-          quality: quality,
+          thumbnailPath: (await getTemporaryDirectory()).path,
+          imageFormat:IMAGEFORMAT.ImageFormat.JPEG,
+          quality: 10,
         );
+
+        final File thumbnail = File(fileName.path);
+          bytes = await thumbnail.readAsBytes();
+
+
       } catch (e) {
         debugPrint('ERROR: Couldn\'t generate thumbnails: $e');
       }
